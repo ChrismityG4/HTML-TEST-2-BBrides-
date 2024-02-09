@@ -191,11 +191,8 @@ p mark {
         bottom: 160px;
     }
     nav .links {
-        text-decoration: unset;
-        color: darkgray;
         padding: 14px;
         font-size: 0.9em;
-        font-weight: 400;
     }
     nav a:hover {
         font-size: 1.1em;
@@ -233,6 +230,10 @@ p mark {
     }
     .slideText {
         bottom: 120px;
+    }
+    nav .links {
+        padding: 8px;
+        font-size: 0.6em;
     }
 }
 
