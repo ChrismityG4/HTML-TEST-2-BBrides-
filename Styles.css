@@ -9,6 +9,8 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
+    color: darkgray;
 }
 
 header {
@@ -174,8 +176,25 @@ p mark {
     padding: 2px 2px;
 }
 
+.para {
+    padding: 20px;
+    margin: auto;
+}
 
+#para1 {
+    margin-top: -140px;
+}
 
+footer {
+    background-color: #BAD2D2;
+}
+
+footer img {
+    display: flex;
+    max-width: 150px;
+    align-content: center;
+    margin: auto;
+}
 
 @media (max-width: 845px){ /*when scaling page size, when screen less than px, below properties take effect*/
     p mark {
@@ -205,7 +224,6 @@ p mark {
         min-width: 80px;
     }
 }
-
 
 
     @media (max-width: 500px){
