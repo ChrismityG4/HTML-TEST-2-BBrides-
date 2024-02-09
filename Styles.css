@@ -1,0 +1,238 @@
+* { /*whole page properties (margin, padding and box sizing = standard)*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition-duration: 300ms; /*time after hover for transition*/
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex; /*makes items in row*/
+    padding-left: 15%;
+    padding-right: 10%;
+}
+header img {
+    padding-top: 10px;
+    max-width: 280px;  /*max size px of profile pic*/
+    margin: 0px auto;  /*img 0px padding, AUTO = remains centre when page size changes*/
+}
+
+header div {
+    align-self: center;
+}
+header i {
+    color: darkgray;
+    padding: 8px;
+   font-size: 1.2em;
+   text-decoration: unset;
+   cursor: pointer;
+}
+
+header i:hover {
+    color: #ACC5C5;
+    font-size: 1.8em;
+}
+
+h6 {
+    border-top: 1px solid darkgray;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav .links {
+    text-decoration: unset;
+    color: darkgray;
+    padding: 14px;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: #ACC5C5;
+    font-size: 1.7em;
+}
+
+.dropDown button {
+    background: none;
+    border: none;
+    color: darkgrey;
+    padding: 14px;
+    font-size: 1.5em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.dropDown a{
+    display: block;
+    color: darkgray;
+    text-decoration: none;
+    background-color: white;
+}
+
+.dropDown .content{
+    position: absolute;
+    display: none;
+    background-color: white; 
+    min-width: 130px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.dropDown:hover .content{
+    display: block;
+    z-index: +1;
+}
+
+.container {
+    z-index: -2;
+    overflow: hidden;
+}
+
+.imgContainer {
+    width: 100%;
+    display: flex;
+    animation: slide 20s infinite;
+}
+
+.imgContainer img {
+    width: 50%;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(0);
+    }
+    21%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-100%);
+    }
+    41%{
+        transform: translateX(-200%);
+    }
+    60%{
+        transform: translateX(-200%);
+    }
+    61%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    81%{
+        transform: translateX(-400%);
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+}
+
+.slideText {
+    position: relative;
+    text-align: center;
+    bottom: 210px;
+}
+
+.slideText p {
+    padding: 10px;
+}
+
+h4 {
+    padding: 12px;
+}
+
+h4 mark{
+    font-size: 2.1em;
+    font-weight: 500;
+    color: #D9C400;
+    background-color: white;
+    opacity: .8;
+    border-radius: 8px;
+    padding: 2px 2px;
+    gap: 10px;
+}
+
+p mark {
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #B7A214;
+    background-color: white;
+    opacity: .8;
+    border-radius: 8px;
+    padding: 2px 2px;
+}
+
+
+
+
+@media (max-width: 845px){ /*when scaling page size, when screen less than px, below properties take effect*/
+    p mark {
+        font-size: 1em;
+    }
+    h4 mark{
+        font-size: 1.4em;
+    }
+    .slideText p {
+        padding: 6px;
+    }
+    .slideText {
+        bottom: 160px;
+    }
+    nav .links {
+        text-decoration: unset;
+        color: darkgray;
+        padding: 14px;
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+    nav a:hover {
+        font-size: 1.1em;
+    }
+    .dropDown button {
+        font-size: 0.9em;
+    }
+    .dropDown .content{
+        font-size: 0.8em;
+        min-width: 80px;
+    }
+}
+
+
+
+    @media (max-width: 500px){
+        header i {
+           font-size: 0.8em;
+        }
+        header img {
+            padding-top: 10px;
+            max-width: 180px;
+            margin-left: 10px;
+    }
+    p mark {
+        font-size: 0.7em;
+    }
+    h4 mark{
+        font-size: 1em;
+        gap: 2px;
+    }
+    .slideText p {
+        padding: 2px;
+        gap: 2px;
+    }
+    .slideText {
+        bottom: 120px;
+    }
+}
+
