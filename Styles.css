@@ -176,13 +176,53 @@ p mark {
     padding: 2px 2px;
 }
 
+.gridContainer {
+    margin-top: -130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.gridImgContainers{
+    margin: 10px;
+    height: 400px;
+    width: 250px;
+    text-decoration: none;
+    overflow:hidden;
+}
+
+.gridImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip: auto;
+}
+.gridImgText {
+    background-color: #BAD2D2;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.gridContainer2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.gridImgContainers:hover {
+    border: 5px solid #D9C400;
+}
+
 .para {
     padding: 20px;
     margin: auto;
 }
 
 #para1 {
-    margin-top: -140px;
+    margin-top: 10px;
 }
 
 footer {
